@@ -1,0 +1,265 @@
+.hero {
+  position: relative;
+  padding: 133px 20px;
+  background-image: url("../../assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  background-repeat: inherit;
+  filter: brightness(0.7);
+  z-index: -1;
+}
+
+.hero-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.hero-container h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+}
+
+.hero-container p {
+  margin: 14px 0 32px;
+  color: #eee;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.buttons-container {
+  display: flex;
+  padding: 5px 0;
+  gap: 15px;
+}
+
+.buttons-container button {
+  border: 1px solid transparent;
+  background: #f0f0f0;
+  color: gray;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 0.09);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  line-height: 1.5;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.buttons-container button.active {
+  background: #5ea51d;
+  border: 1px solid #5ea51d;
+  color: #fff;
+}
+
+.hero-search-container {
+  width: 100%;
+}
+
+.hero-search {
+  max-width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #dedede;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.filter {
+  width: 25%;
+}
+
+.filter-container {
+  position: relative;
+  padding: 0 20px;
+  border-left: none;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-container::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  display: block;
+  background: #dedede;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.filter-content label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.input-container svg {
+  color: #999;
+}
+
+.input-container span,
+.input-container input {
+  color: #5e6d77;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.search {
+  width: 25%;
+  background-color: #5ea51d;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  padding: 0 20px;
+  border-left: none;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid #5ea51d;
+  outline: 1px solid #5ea51d;
+}
+
+.search-content label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 65px;
+  background-color: #fff;
+  color: #5e6d77;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #dedede;
+}
+
+.option-item {
+  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px 18px;
+}
+
+.option-item span {
+  color: #5e6d77;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.option-item span:hover {
+  color: #5ea51d;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 924px) {
+  .hero-container h1 {
+    font-size: 45px;
+  }
+
+  .hero-container p {
+    font-size: 18px;
+  }
+
+  .filter-content label {
+    font-size: 12px;
+  }
+
+  .input-container span,
+  .input-container input {
+    font-size: 12px;
+  }
+  .search-content label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding-top: 0px;
+  }
+  .hero-search {
+    max-width: 100%;
+  }
+  .hero-container h1 {
+    font-size: 34px;
+  }
+
+  .hero-container p {
+    font-size: 16px;
+  }
+  .hero-wrapper {
+    flex-direction: column;
+  }
+  .filter-content label {
+    font-size: 16px;
+  }
+
+  .input-container span,
+  .input-container input {
+    font-size: 16px;
+  }
+  .search-content label {
+    font-size: 16px;
+  }
+
+  .filter,
+  .search {
+    width: 100%;
+  }
+}
