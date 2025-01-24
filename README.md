@@ -1,9 +1,16 @@
 # RealEstate Project
 
-Welcome to the **RealEstate** project! This is a modern real estate platform built using **React**, **TailwindCSS**, and **Vite**. It allows users to explore properties, learn about the team, and get in touch seamlessly. Below, you'll find all the steps to set up, run, and work on the project.
+
+
+![Screenshot 2025-01-24 171419](https://github.com/user-attachments/assets/45d16055-293a-494c-972f-204e21757dad)
 
 ![Screenshot 2025-01-24 171518](https://github.com/user-attachments/assets/0692a33a-bb67-4e3e-b981-78dff5ba8593)
-![Screenshot 2025-01-24 171419](https://github.com/user-attachments/assets/45d16055-293a-494c-972f-204e21757dad)
+
+
+Welcome to the **RealEstate** project! This is a modern real estate platform built using **React**, **TailwindCSS**, and **Vite**. It allows users to explore properties, learn about the team, and get in touch seamlessly. Below, you'll find all the steps to set up, run, and work on the project.
+
+
+
 
 ---
 
