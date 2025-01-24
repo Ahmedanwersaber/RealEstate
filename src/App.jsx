@@ -3,7 +3,7 @@ import Home from './pages/Home/Home'
 import { BrowserRouter as Router ,Routes , Route } from 'react-router-dom'
 import Properties from './pages/properties/Properties'
 import Property from './pages/property/Property'
-import About from './components/About/About'
+
 
 
 
